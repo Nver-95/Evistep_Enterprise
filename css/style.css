@@ -1,0 +1,993 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p,span,a {
+    font-family: sans-serif;
+}
+/* Start header content */
+.header {
+    width: 100%;
+    position: relative;
+}
+
+.header .content_header {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 0;
+}
+
+.content_header .nav_content {
+    display: flex;
+    z-index: 111;
+}
+
+.nav_content .list_group {
+    display: flex;
+    align-items: center;
+}
+
+.list_group .list_item {
+    font-size: 18px;
+    font-weight: 400;
+    padding-right: 32px;
+    list-style: none;
+}
+
+.list_item .item_link {
+    color: #37434E;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.list_item .item_link:hover {
+    transition: 0.5s;
+    color: rgb(180, 176, 176);
+}
+
+.list_group .list_item:last-child {
+    padding: 0 23px 0 0;
+}
+
+.nav_content .header_btn {
+    min-width: 175px;
+    min-height: 42px;
+    border: 1px solid #8276FF;
+    border-radius: 131px;
+    cursor: pointer;
+    background: #FFFFFF;
+}
+
+.header_btn .header_btn_text {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #37434E;
+    transition: 0.5s;
+}
+
+.header_btn .header_btn_text:hover {
+    transition: 0.5s;
+    color: rgb(180, 176, 176);
+}
+
+.content_header .hamburger_btn {
+    display: none;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.content_header .hamburger_btn:hover {
+    transition: 0.5s;
+    background: rgb(117, 111, 111);
+}
+
+.hamburger_btn img {
+    width: 40px;
+}
+/* End header content */
+/* Start billable_hours_content */
+.billable_hours_content {
+    width: 100%;
+    min-height: 706px;
+    display: flex;
+    flex-direction: column;
+    background: #F8F8FBB2;
+    border-radius: 0 0 30% 30%;
+}
+
+.billable_hours_content .billable_hours_container {
+    margin: 80px auto 33px;
+    padding: 0 10px;
+}
+
+.billable_hours_container .billable_hours_context {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.billable_hours_context .billable_hours_text {
+    font-size: 49px;
+    font-weight: 600;
+    letter-spacing: 0.005em;
+    color: #37434E;
+    padding: 0 0 0 20px;
+}
+
+.billable_hours_container .text_instruction {
+    max-width: 623px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 21px 0 41px 0;
+    letter-spacing: 0.01em;
+    color: #4D5B67;
+}
+
+.billable_hours_container .billable_hours_btn {
+    min-width: 229px;
+    min-height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: #8276FF;
+    box-shadow: 0px 4.07788px 14.2726px rgba(130, 118, 255, 0.3);
+    border-radius: 31.0938px;
+    cursor: pointer;
+}
+
+.billable_hours_btn .start_free_text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.billable_hours_container .extra_text_content {
+    display: inherit;
+    text-align: center;
+    padding: 12px 0 0 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #FFC107;
+}
+/* End billable_hours_content */
+/* Start user_data_content */
+.user_data_content {
+    width: 100%;
+}
+
+.user_data_content .user_data_container {
+    margin: -370px auto 63px;
+    display: flex;
+    justify-content: center;
+}
+
+.user_data_container .user_data_image {
+    max-width: 1319px;
+    width: 100%;
+}
+/* End user_data_content */
+/* Start amount_report_content */
+.amount_report_content .amount_report_container {
+    display: flex;
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.amount_report_container .left_side_report {
+    min-width: 659.5px;
+    min-height: 573px;
+    background: url(../images/png/report.png) no-repeat;
+}
+
+.amount_report_container .right_side_report {
+    margin: 45px 0 0 116px;
+}
+
+.right_side_report .report_title {
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 49px;
+    letter-spacing: 0.005em;
+    color: #37434E;
+}
+
+.right_side_report .report_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #4D5B67;
+}
+
+.report_text .up_side_text {
+    padding: 41px 0 20px;
+}
+/* End amount_report_content */
+/* Start financial_information_content */
+.financial_information_content {
+    width: 100%;
+    margin: 46px auto 130px;
+    background: rgba(99, 133, 253, 0.7);
+    border-radius: 0px;
+}
+
+.financial_information_content .financial_information_container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.financial_information_container .left_side_finans {
+    margin: 0 241px 0 0;
+} 
+
+.left_side_finans .finans_title {
+    max-width: 478px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 39px;
+    line-height: 49px;
+    padding: 52px 0 0 0;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+} 
+
+.left_side_finans .finans_text {
+    max-width: 445px;
+    width: 100%;
+    padding: 41px 0 0 0;
+}
+
+.up_side_finans, .center_side_finans {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.finans_text .center_side_finans {
+    padding: 20px 0;
+}
+
+.finans_text .down_side_finans {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    padding: 10px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 3px;
+    margin: 0 0 52px -14px;
+}
+
+.financial_information_container .right_side_finans {
+    width: 677px;
+    min-height: 465.5px;
+    background: url(../images/png/finans.png) no-repeat;
+}
+/* End financial_information_content */
+/* Start financial_permissions_content  */
+.financial_permissions_content {
+    width: 100%;
+    margin: 0 auto 130px;
+}
+
+.financial_permissions_content .financial_permissions_container {
+    max-width: 1325px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.financial_permissions_container .financial_permissions_titles {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.financial_permissions_titles .workspace_permissions {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #FFBE5B;
+    text-align: center;
+}
+
+.financial_permissions_titles .financial_permissions_title {
+    font-weight: 600;
+    font-size: 39px;
+    padding: 13px 0 87px 0;
+    letter-spacing: 0.005em;
+    text-align: center;
+    color: #37434E;
+}
+
+.financial_permissions_container .financial_permissions_workers {
+    display: flex;
+    align-items: center;
+}
+
+.financial_permissions_workers .left_side_workers {
+    max-width: 516px;
+    width: 100%;
+}
+
+.left_side_workers .executive_manager_content, .project_manager_content, .employee_content {
+    padding: 10px 0 10px 26px;
+    margin: 34px 0;
+}
+
+.left_side_workers .owner_content, .client_content {
+    margin: 34px 0 0 0;
+    padding: 10px 0 10px 26px;
+    border-left: 3px solid #8276FF;
+}
+
+.left_side_workers .executive_manager_content {
+    border-left: 2px solid #FFB546;
+}
+
+.left_side_workers .project_manager_content {
+    border-left: 2px solid #6385FD;
+}
+
+.left_side_workers .employee_content {
+    border-left: 2px solid #33DBA8;
+}
+
+.left_side_workers .client_content {
+    border-left: 2px solid #FD779F;
+}
+
+.left_side_workers .owner_container, .executive_manager_container, .project_manager_container, .employee_container, .client_container {
+    display: flex;
+    align-items: center;
+}
+
+.owner_content .owner_container {
+    margin: 0 0 20px 0;
+}
+
+.left_side_workers .workers_title {
+    font-size: 20px;    
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.005em;
+    padding: 0 0 0 16px;
+    color: #37434E;
+}
+
+.owner_content .owner_texts {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #4D5B67;
+}
+
+.owner_texts .owner_span {
+    text-decoration-line: underline;
+}
+
+.financial_permissions_workers .right_side_workers {
+    max-width: 736.5px;
+    width: 100%;
+    min-height: 346px;
+    background: url(../images/png/workers.png) no-repeat;
+}
+/* End financial_permissions_content */
+/* Start features_content */
+.features_content {
+    width: 100%;
+    background: rgba(248, 248, 251, 0.4);
+}
+
+.features_content .features_container {
+    max-width: 982px;
+    width: 100%;
+    margin: 79px auto 81px;
+}
+
+.features_title .inscription_features, .text_features {
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #4D5B67;
+}
+
+.features_title .inscription_features {
+    font-size: 39px;
+    font-weight: 600;
+    padding: 79px 0 0 0;
+}
+
+.features_title .text_features {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 20px 0 58px;
+}
+
+.features_container .feature_data_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+
+.feature_data_content .feature_data_window {
+    width: 290px;
+    background: #FFFFFF;
+    box-shadow: -3px 6px 19.8942px rgba(0, 79, 123, 0.05);
+    border-radius: 20px;
+    padding: 20px 36px;
+}
+
+.feature_data_window .window_icon {
+    display: flex;
+    justify-content: center;
+}
+
+.feature_data_window .window_title {
+    display: block;
+    padding: 14px 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 128%;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #37434E;
+}
+
+.feature_data_window .window_text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #4D5B67;
+    text-align: center;
+    padding: 14px 0 20px 0;
+}
+
+.features_container .more_features {
+    display: flex;
+    justify-content: center;
+    padding: 41px 0 81px 0;
+}
+
+.more_features .more_features_title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    text-decoration-line: underline;
+    color: #4D5B67;
+}
+/* End features_content  */
+/* Start faqs_content */
+.faqs_content {
+    width: 100%;
+    padding: 0 0 130px 0;
+}
+
+.faqs_content .faqs_container {
+    max-width: 842px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.faqs_container .faqs_title {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.005em;
+    color: #37434E;
+    padding: 0 0 58px 0;
+}
+
+.faqs_option .faqs_accordion {
+    background: #FFFFFF;
+    cursor: pointer;
+    padding: 25px 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-top: 1px solid rgba(55, 67, 78, 0.2);
+    outline: none;
+    transition: 0.4s;
+  }
+
+.faqs_accordion .accordion_title {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0.005em;
+    color: #37434E;
+  }
+  
+.active, .faqs_accordion:hover {
+    background-color: #ccc;
+  }
+  
+.faqs_option .faqs_panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 1px solid rgba(55, 67, 78, 0.2);
+  }
+
+.faqs_panel .faqs_text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 8px 0 12px 0;
+    letter-spacing: 0.01em;
+    color: #4D5B67;
+  }
+/* End faqs_content */
+/* Start webWork_content */
+.webWork_content {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    background: rgba(130, 118, 255, 0.05);
+}
+
+.webWork_content .webWork_effect {
+    position: absolute;
+    width: 566.91px;
+    height: 353.69px;
+    left: -405px;
+    top: 93px;
+    background: rgba(130, 118, 255, 0.5);
+    transform: matrix(-0.69, 0.7, -0.75, -0.69, 0, 0);
+    z-index: -12;
+    border-radius: 50px;
+}
+
+.webWork_content .webWork_container {
+    margin: 0 auto;
+}
+
+.webWork_container .webWork_title {
+    display: inline-block;
+    width: 100%;
+    font-size: 31px;    
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #37434E;
+    padding: 94px 0 41px 0;
+}
+
+.webWork_container .webWork_form {
+    max-width: 668px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.webWork_form .form_sending {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_sending .form_input {
+    max-width: 428px;
+    width: 100%;
+    padding: 16px 0 16px 24px;
+    background: #FAFEFF;
+    border: 1.5px solid #F3F1FF;
+    box-sizing: border-box;
+    border-radius: 28.5px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #8498AA;
+}
+
+.form_sending .webWork_btn {
+    max-width: 232px;
+    width: 100%;
+    background: #8276FF;
+    border-radius: 30.5px;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.webWork_btn .webWork_btn_text {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.webWork_form .webWork_form_text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 7px 0 94px 0;
+    color: #FFC107;
+}
+/* End webWork_content  */
+/* Start footer */
+.footer_container {
+    max-width: 1274px;
+    width: 100%;
+    margin: 30px auto 58px;
+}
+
+.footer_container .footer_link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_link .parent_item {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #394C5B;
+}
+
+.parent_item .child_item {
+    padding: 16px 0 0 0;
+    list-style: none;
+}
+
+.parent_item .child_item:first-child {
+    padding: 24px 0 0 0;
+}
+
+.child_item .child_item_link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #4D5B67;
+    text-decoration: none;
+}
+
+.footer .footer_down_side {
+    width: 100%;
+    background: rgba(130, 118, 255, 0.04);
+    backdrop-filter: blur(70px);
+    border-radius: 2px;
+}
+
+.footer_down_side .footer_down_content {
+    max-width: 1336px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 22px 15px 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_down_content .left_side_footer {
+    display: flex;
+    align-items: center;
+}
+
+.left_side_footer .footer_data {
+    margin: 0 0 0 16px;
+}
+
+.right_side_footer .footer_icons {
+    margin: 25px 0;
+}
+/* End footer */
+@media (max-width: 1340px) {
+    .header .content_header {
+        padding: 11px 15px;
+    }
+
+    .amount_report_content .amount_report_container {
+        padding: 0 15px;
+    }
+
+    .amount_report_container .right_side_report {
+        margin: 45px 0 0 20px;
+    }
+
+    .financial_information_container {
+        justify-content: center;
+        padding: 0 15px;
+    }
+
+    .financial_information_container .left_side_finans{
+        margin: 0;
+    }
+
+    .financial_permissions_container .financial_permissions_workers {
+        justify-content: center;
+    }
+
+    .financial_permissions_workers .left_side_workers {
+        max-width: 330px;
+    }
+
+    .footer_container .footer_link {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 1200px) {
+    .financial_information_content .financial_information_container {
+        flex-direction: column;
+    }
+
+    .financial_information_container .left_side_finans, .right_side_finans {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1100px) {
+    .financial_permissions_container .financial_permissions_workers {
+        padding: 0 15px;
+    }
+
+    .financial_permissions_workers .right_side_workers {
+        background-size: contain;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        position: sticky;
+        top: 0;
+        background: white;
+    }
+
+    .content_header .nav_content {
+        display: none;
+    }
+
+    .content_header .hamburger_btn {
+        display: block;
+    }
+
+    .nav_content.show {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        background: white;
+    }
+
+    .nav_content .list_group {
+        flex-direction: column;
+        line-height: 55px;
+        padding: 30px 0 130px 40px;
+    }
+
+    .list_group .list_item {
+        font-size: 32px;
+    }
+
+    .nav_content .header_btn {
+        min-width: 125px;
+        margin: 0 auto 50px;
+        position: relative;
+        left: 8px;
+        bottom: 120px;
+    }
+
+    .billable_hours_content {
+        min-height: 500px;
+    }
+
+    .user_data_content .user_data_container {
+        margin: -170px auto 63px;
+    }
+
+    .amount_report_container .left_side_report {
+        margin: 0 auto;
+    }
+
+    .amount_report_content .amount_report_container {
+        flex-direction: column;
+    }
+
+    .right_side_report .report_title {
+        text-align: center;
+    }
+
+    .financial_permissions_container .financial_permissions_workers {
+        flex-direction: column;
+    }
+
+    .financial_permissions_workers .right_side_workers {
+        margin: 50px auto 0;
+    }
+
+    .features_container .feature_data_content {
+        padding: 0 15px;
+    }
+
+    .feature_data_content .feature_data_window {
+        width: 235px;
+    }
+}
+
+@media (max-width: 768px) {
+    .amount_report_container .left_side_report {
+        background-size: contain;
+        min-width: 350px;
+        min-height: 300px;
+    }
+
+    .financial_information_content {
+        margin: 46px auto 70px;
+    }
+
+    .financial_information_container .right_side_finans {
+        width: 100%;
+        background-size: contain;
+    }
+
+    .financial_permissions_workers .left_side_workers {
+        max-width: 700px;
+    }
+
+    .financial_permissions_workers .right_side_workers {
+        min-height: 300px;
+    }
+
+    .financial_permissions_content {
+        margin: 0 auto 20px;
+    }
+
+    .financial_permissions_titles .financial_permissions_title {
+        padding: 13px 0 10px 0;
+    }
+
+    .features_container .feature_data_content {
+        flex-direction: column;
+    }
+
+    .features_content .features_container {
+        margin: 10px auto 81px;
+    }
+    
+    .feature_data_content .feature_data_window {
+        width: 70%;
+        margin: 15px auto;
+    }
+
+    .webWork_form .form_sending {
+        flex-direction: column;
+    }
+
+    .webWork_container .webWork_form {
+        padding:  0 15px;
+    }
+
+    .form_sending .form_input {
+        max-width: 100%;
+    }
+
+    .form_sending .webWork_btn {
+        margin: 15px auto;
+    }
+
+    .webWork_form .webWork_form_text {
+        text-align: center;
+    }
+
+    .footer_container .footer_link {
+        flex-direction: column;
+    }
+
+    .footer_link .parent_item {
+        margin: 10px 0 10px 15px;
+    }
+}
+
+
+@media (max-width:576px) {
+    .financial_information_container .right_side_finans {
+        min-height: 320px;
+        background-position: 50% 0%;
+    }
+
+    .faqs_accordion .accordion_title {
+        font-size: 22px;
+    }
+
+    .faqs_content {
+        padding: 0 0 80px 0;
+    }
+
+    .webWork_container .webWork_title {
+        font-size: 27px;
+        line-height: 40px;
+    }
+
+    .footer_down_side .footer_down_content {
+        width: 50%;
+        flex-direction: column;
+    }
+
+    .footer_down_content .left_side_footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:420px) {
+    .billable_hours_context .billable_hours_text {
+        font-size: 34px;
+        padding: 0 0 0 10px;
+    }
+
+    .billable_hours_container .text_instruction {
+        padding: 21px 0;
+    }
+
+    .user_data_content .user_data_container {
+        margin: -140px auto 0;
+    }
+
+    .amount_report_container .left_side_report {
+        min-width: 270px;
+        min-height: 240px;
+    }
+
+    .right_side_report .report_title {
+        font-size: 35px;
+    }
+
+    .amount_report_container .right_side_report {
+        margin: 20px 0;
+    }
+
+    .right_side_report .report_text {
+        padding: 0 20px;
+    }
+
+    .financial_information_container .right_side_finans {
+        min-height: 250px;
+    }
+
+    .left_side_finans .finans_title {
+        text-align: center;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .financial_permissions_workers .right_side_workers {
+        min-height: 230px;
+    }
+
+    .financial_permissions_titles .financial_permissions_title {
+        font-size: 32px;
+    }
+
+    .feature_data_content .feature_data_window {
+        width: 90%;
+    }
+}
